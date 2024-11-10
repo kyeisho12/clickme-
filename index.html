@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Platformer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Moving background -->
+        <div id="background">
+            <div class="cloud" style="left: 10%; top: 15%;"></div>
+            <div class="cloud" style="left: 30%; top: 25%;"></div>
+            <div class="cloud" style="left: 60%; top: 10%;"></div>
+            <div class="cloud" style="left: 80%; top: 30%;"></div>
+        </div>
+
+        <!-- Scenery -->
+        <div id="scenery">
+            <div class="tree" style="left: 5%; bottom: 25%;"></div>
+            <div class="tree" style="left: 25%; bottom: 25%;"></div>
+            <div class="tree" style="left: 45%; bottom: 25%;"></div>
+            <div class="tree" style="left: 65%; bottom: 25%;"></div>
+            <div class="tree" style="left: 85%; bottom: 25%;"></div>
+            <div class="grass"></div>
+        </div>
+
+        <!-- Character element -->
+        <div id="character"></div>
+
+        <!-- Ground element -->
+        <div id="ground"></div>
+
+        <!-- Collectibles -->
+        <div class="coin" style="left: 15%; bottom: 30%;"></div>
+        <div class="coin" style="left: 35%; bottom: 30%;"></div>
+        <div class="coin" style="left: 55%; bottom: 30%;"></div>
+        <div class="coin" style="left: 75%; bottom: 30%;"></div>
+
+        <!-- Obstacles -->
+        <div class="obstacle" style="left: 40%; bottom: 25%;"></div>
+        <div class="obstacle" style="left: 60%; bottom: 25%;"></div>
+
+        <!-- Progress bar -->
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <!-- Picture containers -->
+        <div id="pictures">
+            <div class="picture-container" style="left: 12%; bottom: 45%;">
+                <img src="1.jpg" alt="Scenery 1">
+                <div class="message-box">Message for picture 1</div>
+            </div>
+            <div class="picture-container" style="left: 32%; bottom: 55%;">
+                <img src="2.png" alt="Scenery 2">
+                <div class="message-box">Message for picture 2</div>
+            </div>
+            <div class="picture-container" style="left: 52%; bottom: 65%;">
+                <img src="3.jpg" alt="Scenery 3">
+                <div class="message-box">Message for picture 3</div>
+            </div>
+            <div class="picture-container" style="left: 72%; bottom: 50%;">
+                <img src="4.jpg" alt="Scenery 4">
+                <div class="message-box">Message for picture 4</div>
+            </div>
+            <div class="picture-container" style="left: 90%; bottom: 35%;">
+                <img src="5.jpg" alt="Scenery 5">
+                <div class="message-box">Message for picture 5</div>
+            </div>
+        </div>
+
+        <!-- Score display -->
+        <div id="score">Score: <span id="score-value">0</span></div>
+
+        <!-- Game instructions -->
+        <div id="instructions">
+            Use arrow keys or AD to move. Collect coins and avoid obstacles. Click pictures to reveal messages.
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
